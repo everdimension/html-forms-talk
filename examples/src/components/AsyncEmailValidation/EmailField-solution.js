@@ -11,8 +11,6 @@ function checkEmail(value) {
   });
 }
 
-// const checkEmailDebounced = debounce(checkEmail, 500);
-
 class EmailField extends React.Component {
   state = {
     checking: false,
