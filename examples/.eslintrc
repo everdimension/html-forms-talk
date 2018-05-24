@@ -1,4 +1,9 @@
+plugins:
+  - react
 parser: babel-eslint
+parserOptions:
+  ecmaFeatures:
+    jsx: true
 extends:
   - airbnb-base
   - prettier
@@ -7,3 +12,7 @@ env:
 rules:
   import/prefer-default-export: off
   class-methods-use-this: off
+  react/jsx-uses-react:
+    - error
+  react/jsx-uses-vars:
+    - error

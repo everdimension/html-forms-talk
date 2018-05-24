@@ -1,5 +1,5 @@
 import React from "react";
-import escapeRegex from 'escape-string-regexp';
+import escapeRegex from "escape-string-regexp";
 import { formDataToObject } from "../../utils/formDataToObject";
 import "./RepeatPassword.css";
 
@@ -31,7 +31,10 @@ class RepeatPassword extends React.Component {
   render() {
     const { values, result } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form
+        className="repeatPassword"
+        onSubmit={this.handleSubmit}
+      >
         <p>
           <label htmlFor="password">Password</label>
           <input
@@ -52,7 +55,7 @@ class RepeatPassword extends React.Component {
             id="repeatPassword"
             type="text"
             placeholder="repeat password"
-            pattern={escapeRegex(values.password || '')}
+            pattern={escapeRegex(values.password || "")}
             required
           />
         </p>

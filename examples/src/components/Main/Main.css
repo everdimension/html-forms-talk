@@ -46,8 +46,19 @@ nav {
   padding: 0.5em 1em;
 }
 
+.nav-wrapper {
+  /* overflow: auto;
+  -webkit-overflow-scrolling: touch; */
+}
+
 nav a {
   color: var(--theme-contrast-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav a + a {
+  margin-left: 0.5em;
 }
 
 form p:not(:last-of-type) {
