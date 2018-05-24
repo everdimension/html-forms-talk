@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple form</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab">
+  <style>
+    input:invalid {
+      border: 2px solid red;
+    }
+    input {
+      padding: 10px;
+      border: 1px solid #cfcfcf;
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 16px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label for="name">Name:</label>
+    <input name="name" id="name" type="text" required />
+    <br />
+    <label for="phone">Phone:</label>
+    <input name="phone" id="phone" type="tel" required />
+    <button>submit</button>
+  </form>
+
+</body>
+</html>

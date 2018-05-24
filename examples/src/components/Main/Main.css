@@ -1,0 +1,80 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  /* background: #fafafa; */
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 2em;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #cfcfcf;
+  font-family: 'Roboto Slab', sans-serif;
+  outline: none;
+}
+
+label {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  background-color: #1890ff;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+}
+
+.Main {
+  padding: 0 1em;
+}
+
+nav {
+  background-color: #1890ff;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 0.5em 1em;
+}
+
+nav a {
+  color: white;
+}
+
+form p:not(:last-of-type) {
+  background: white;
+  /* border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee; */
+  margin-left: -1em;
+  margin-right: -1em;
+  padding: 0.25em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form p:not(:last-of-type) input {
+  margin-left: auto;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 0.6em;
+  position: relative;
+  bottom: 4px;
+}
+
+form p:not(:last-of-type) label {
+  flex-basis: 40%;
+  flex-shrink: 0.5;
+  min-width: 150px;
+  margin-right: 0.5em;
+}
