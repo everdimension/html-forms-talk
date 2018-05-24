@@ -1,3 +1,8 @@
+:root {
+  --theme-color: #f7df1e; /* #1890ff; */
+  --theme-contrast-color: black; /* #1890ff; */
+}
+
 html {
   font-size: 16px;
 }
@@ -23,8 +28,8 @@ label {
 }
 
 button {
-  background-color: #1890ff;
-  color: white;
+  background-color: var(--theme-color);
+  color: var(--theme-contrast-color);
   padding: 0.5em 1em;
   border: none;
 }
@@ -34,7 +39,7 @@ button {
 }
 
 nav {
-  background-color: #1890ff;
+  background-color: var(--theme-color);
   display: flex;
   justify-content: space-around;
   color: white;
@@ -42,7 +47,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--theme-contrast-color);
 }
 
 form p:not(:last-of-type) {
