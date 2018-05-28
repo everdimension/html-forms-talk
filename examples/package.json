@@ -10,6 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 safari version"
+  ],
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
     "lodash": "^4.17.10",
@@ -20,6 +24,7 @@
     "universal-router": "^6.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^8.5.1",
     "babel-eslint": "^8.2.3",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.24.1",

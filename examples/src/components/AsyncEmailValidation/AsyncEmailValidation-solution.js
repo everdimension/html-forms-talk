@@ -1,7 +1,7 @@
 import React from "react";
 import { EmailField } from "./EmailField";
 import { formDataToObject } from "../../utils/formDataToObject";
-import './AsyncEmailValidation.css';
+import "./AsyncEmailValidation.css";
 
 class AsyncEmailValidation extends React.Component {
   state = {};
@@ -26,11 +26,23 @@ class AsyncEmailValidation extends React.Component {
       >
         <p>
           <label htmlFor="username">Name</label>
-          <input name="username" type="text" required />
+          <input
+            name="username"
+            id="username"
+            type="text"
+            placeholder="enter username"
+            required
+          />
         </p>
         <p>
           <label htmlFor="email">Email</label>
-          <EmailField name="email" type="email" required />
+          <EmailField
+            name="email"
+            id="email"
+            type="email"
+            placeholder="enter email"
+            required
+          />
         </p>
         <p>
           <button>submit</button>

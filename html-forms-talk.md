@@ -3,6 +3,9 @@
 | Form Validation
 
 * Why accessibility matters
+  * it's not only about people with disabilities. It's about making your
+    app usable by all users. Does the sign up form save the credentials?
+    Does the back button work? Etc...
   * a11y is a pit of despair
     * nobody checks for it
     * better dev experience can lead to better a11y

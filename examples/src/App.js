@@ -13,7 +13,7 @@ function render(component) {
 }
 
 function getHash() {
-  return location.hash || '#/';
+  return window.location.hash || '#/';
 }
 
 export function renderApp() {

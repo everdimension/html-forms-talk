@@ -8,16 +8,37 @@ html {
 }
 
 body {
-  /* background: #fafafa; */
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 2em;
+  background: #fafafa;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+@media (min-width: 550px) {
+  body {
+    font-size: 2em;
+    background: #fff;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 10px 1em;
 }
 
 input {
   padding: 10px;
   border: 2px solid #cfcfcf;
-  font-family: 'Roboto Slab', sans-serif;
+  /* border: none; */
+  border-radius: 0;
+  font-family: "Roboto Slab", sans-serif;
   outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 label {
@@ -25,6 +46,8 @@ label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 button {
@@ -34,6 +57,10 @@ button {
   border: none;
 }
 
+button:hover {
+  text-decoration: underline;
+}
+
 .Main {
   padding: 0 1em;
 }
@@ -41,17 +68,19 @@ button {
 nav {
   background-color: var(--theme-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
-  padding: 0.5em 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.nav-wrapper {
-  /* overflow: auto;
-  -webkit-overflow-scrolling: touch; */
+a:hover {
+  text-decoration: none;
 }
 
 nav a {
+  display: block;
+  padding: 16px 0;
   color: var(--theme-contrast-color);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -83,14 +112,31 @@ form p:not(:last-of-type) input {
 
 input::-webkit-input-placeholder {
   color: #ccc;
-  font-size: 0.6em;
-  position: relative;
-  bottom: 4px;
+}
+
+@media (min-width: 550px) {
+  input::-webkit-input-placeholder {
+    font-size: 0.6em;
+    position: relative;
+    bottom: 4px;
+  }
 }
 
 form p:not(:last-of-type) label {
   flex-basis: 40%;
   flex-shrink: 0.5;
-  min-width: 150px;
+  min-width: 100px;
   margin-right: 0.5em;
+}
+
+pre {
+  padding: 0.5em;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #f5f5f5;
+}
+
+.SolutionLink {
+  font-size: 12px;
+  color: #aaa;
 }

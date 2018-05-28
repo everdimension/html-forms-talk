@@ -1,3 +1,6 @@
-.AsyncEmail input:valid {
+.AsyncEmail input:valid,
+.AsyncEmail input:focus:valid {
   border-color: #6fe874;
+  outline: 1px solid #6fe874;
+  outline-offset: 0;
 }

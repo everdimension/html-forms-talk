@@ -1,6 +1,8 @@
 import React from "react";
 import { RepeatPassword } from "./components/RepeatPassword";
+import { RepeatPassword as RepeatPasswordSolution } from "./components/RepeatPassword/RepeatPassword-Solution";
 import { AsyncEmailValidation } from "./components/AsyncEmailValidation";
+import { AsyncEmailValidation as AsyncEmailValidationSolution } from "./components/AsyncEmailValidation/AsyncEmailValidation-Solution";
 
 export const routes = [
   {
@@ -16,12 +18,20 @@ export const routes = [
         action: () => <p>hello</p>,
       },
       {
-        path: "/repeat-password",
+        path: "/example/repeat-password",
         action: () => <RepeatPassword />,
       },
       {
-        path: "/async-email-validation",
+        path: "/example/repeat-password/solution",
+        action: () => <RepeatPasswordSolution />,
+      },
+      {
+        path: "/example/async-email-validation",
         action: () => <AsyncEmailValidation />,
+      },
+      {
+        path: "/example/async-email-validation/solution",
+        action: () => <AsyncEmailValidationSolution />,
       },
     ],
   },

@@ -31,14 +31,8 @@ class EmailField extends React.Component {
 
   handleChange = event => {
     const input = event.target;
-    const { validity } = input;
-    if (validity.valueMissing || validity.typeMismatch) {
-      input.setCustomValidity('');
-    }
-    if (
-      input.validity.valid ||
-      input.validity.customError
-    ) {
+    input.setCustomValidity('');
+    if (input.validity.valid) {
       input.setCustomValidity("checking...");
       this.setState({ checking: true });
       this.handleConfirm(input.value);

@@ -1,1 +1,1 @@
-highlight -O rtf $1 | pbcopy
+highlight -O rtf --syntax=tcsoft

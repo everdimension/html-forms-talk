@@ -2,7 +2,7 @@
   <input type="text" name="name" />
   <input type="tel" name="phone" />
   <input type="text" name="age" />
-</form>;
+</form>
 
 {
   name: 'john',
