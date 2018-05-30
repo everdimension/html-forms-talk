@@ -3,6 +3,15 @@
   --theme-contrast-color: black; /* #1890ff; */
 }
 
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -10,7 +19,7 @@ html {
 body {
   background-color: #fafafa;
   font-family: "Roboto Slab", sans-serif;
-  background-image: url('../../assets/ostankino.svg');
+  background-image: url("../../assets/ostankino.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 20%;
@@ -20,6 +29,7 @@ body {
   body {
     font-size: 2em;
     background-color: #fff;
+    background-size: 200px 400px;
   }
 }
 
