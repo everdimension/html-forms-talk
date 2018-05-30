@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel --port=8080 src/index.html",
+    "build": "parcel build --public-url '.' src/index.html",
+    "deploy": "npm run build && gh-pages --dist ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -33,6 +35,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
+    "gh-pages": "^1.1.0",
     "parcel-bundler": "^1.8.1"
   }
 }

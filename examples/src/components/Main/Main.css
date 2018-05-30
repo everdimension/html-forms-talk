@@ -13,6 +13,7 @@ body {
   background-image: url('../../assets/ostankino.svg');
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 20%;
 }
 
 @media (min-width: 550px) {
