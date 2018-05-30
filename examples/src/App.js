@@ -1,35 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Router from 'universal-router';
-import { Main } from './components/Main';
-import { routes } from './routes';
+import React from "react";
+import ReactDOM from "react-dom";
+import Router from "universal-router";
+import { routes } from "./routes";
 
 const router = new Router(routes);
 
-const root = document.getElementById('root');
+const root = document.getElementById("root");
 
 function render(component) {
-  ReactDOM.render(<Main>{component}</Main>, root);
+  ReactDOM.render(component, root);
 }
 
 function getHash() {
-  return window.location.hash || '#/';
+  return window.location.hash || "#/";
 }
 
-export function renderApp() {
+function matchRoute() {
   router
     .resolve({
       pathname: getHash().slice(1),
-      render,
     })
-    .catch(e => {
-      console.log('errrr', e);
-      return 'something';
+    .then(layout => {
+      render(layout);
+    })
+    .catch(() => {
+      render(<h2 style={{ padding: "1em" }}>404</h2>);
     });
-  window.addEventListener('hashchange', () => {
-    router.resolve({
-      pathname: getHash().slice(1),
-      render,
-    });
-  });
+}
+
+export function renderApp() {
+  matchRoute();
+  window.addEventListener("hashchange", matchRoute);
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Main } from "./components/Main";
 import { RepeatPassword } from "./components/RepeatPassword";
 import { RepeatPassword as RepeatPasswordSolution } from "./components/RepeatPassword/RepeatPassword-Solution";
 import { AsyncEmailValidation } from "./components/AsyncEmailValidation";
@@ -7,11 +8,13 @@ import { AsyncEmailValidation as AsyncEmailValidationSolution } from "./componen
 export const routes = [
   {
     path: "/",
-    action: context => {
+    action: context =>
       context.next().then(component => {
-        context.render(component);
-      });
-    },
+        if (!component) {
+          throw new Error("Page not found");
+        }
+        return <Main>{component}</Main>;
+      }),
     children: [
       {
         path: "",

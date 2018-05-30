@@ -8,14 +8,17 @@ html {
 }
 
 body {
-  background: #fafafa;
+  background-color: #fafafa;
   font-family: "Roboto Slab", sans-serif;
+  background-image: url('../../assets/ostankino.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 @media (min-width: 550px) {
   body {
     font-size: 2em;
-    background: #fff;
+    background-color: #fff;
   }
 }
 
