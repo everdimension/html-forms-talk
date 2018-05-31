@@ -4,6 +4,7 @@ import { RepeatPassword } from "./components/RepeatPassword";
 import { RepeatPassword as RepeatPasswordSolution } from "./components/RepeatPassword/RepeatPassword-Solution";
 import { AsyncEmailValidation } from "./components/AsyncEmailValidation";
 import { AsyncEmailValidation as AsyncEmailValidationSolution } from "./components/AsyncEmailValidation/AsyncEmailValidation-Solution";
+import { Resources } from './components/Resources';
 
 export const routes = [
   {
@@ -18,7 +19,7 @@ export const routes = [
     children: [
       {
         path: "",
-        action: () => <p>hello</p>,
+        action: () => <Resources />,
       },
       {
         path: "/example/repeat-password",

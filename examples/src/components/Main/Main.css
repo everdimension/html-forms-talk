@@ -1,6 +1,8 @@
 :root {
   --theme-color: #f7df1e; /* #1890ff; */
   --theme-contrast-color: black; /* #1890ff; */
+  --link-color: #1890ff;
+  --link-color-visited: #0467c3;
 }
 
 * {
@@ -37,6 +39,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-color-visited);
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .footer {
@@ -77,12 +91,22 @@ button:hover {
 
 .Main {
   padding: 0 1em;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-wrapper {
+  background-color: var(--theme-color);
 }
 
 nav {
-  background-color: var(--theme-color);
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   padding-left: 1em;
   padding-right: 1em;
@@ -95,9 +119,13 @@ a:hover {
 nav a {
   display: block;
   padding: 16px 0;
-  color: var(--theme-contrast-color);
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+nav a,
+nav a:visited {
+  color: var(--theme-contrast-color);
 }
 
 nav a + a {
@@ -150,7 +178,8 @@ pre {
   background-color: #f5f5f5;
 }
 
-.SolutionLink {
+.SolutionLink,
+.SolutionLink:visited {
   font-size: 12px;
   color: #aaa;
 }
