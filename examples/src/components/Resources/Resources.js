@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import './Resources.css';
 
 const resources = [
   {
@@ -27,7 +27,7 @@ const propTypes = {};
 
 function Resources() {
   return (
-    <React.Fragment>
+    <article className="article">
       {resources.map(resource => (
         <p key={resource.url}>
           {resource.name}
@@ -35,7 +35,7 @@ function Resources() {
           <a href={resource.url}>{resource.url}</a>
         </p>
       ))}
-    </React.Fragment>
+    </article>
   );
 }
 

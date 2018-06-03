@@ -26,7 +26,7 @@ function Main({ children }) {
           </nav>
         </div>
       </div>
-      <div className="Main">
+      <main className="Main">
         {isExamplePage && !isSolutionPage ? (
           <p
             style={{
@@ -45,7 +45,7 @@ function Main({ children }) {
           </p>
         ) : null}
         {children}
-      </div>
+      </main>
       {isExamplePage && !isSolutionPage ? (
         <footer className="footer">
           <a
