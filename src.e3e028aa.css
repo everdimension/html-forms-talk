@@ -387,7 +387,7 @@ a {
 }
 
 a:visited {
-  color: var(--link-color);
+  color: var(--link-color-visited);
 }
 
 a:hover {
@@ -554,4 +554,7 @@ pre {
 
 input + .Spinner {
   margin-left: 0.5em;
+}
+.article {
+  word-break: break-all;
 }
