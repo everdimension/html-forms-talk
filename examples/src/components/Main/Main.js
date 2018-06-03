@@ -17,10 +17,10 @@ function Main({ children }) {
         <div>
           <nav>
             <a href="#/">Main</a>
-            <a href="#/example/repeat-password">
+            <a href="#/example/repeat-password/solution">
               RepeatPassword
             </a>
-            <a href="#/example/async-email-validation">
+            <a href="#/example/async-email-validation/solution">
               AsyncEmail
             </a>
           </nav>
